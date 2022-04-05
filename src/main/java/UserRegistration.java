@@ -57,4 +57,19 @@ public class UserRegistration {
         return matcher.matches();
     }
 
+    /*
+     * Method to check rule one minimum 8
+     *Should have at least 1
+     *Upper Case - NOTE – All rules must
+     */
+    public boolean passwordRule2(String password) {
+        String regex = "^[A-Z]{1}[a-z]{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password);
+        return matcher.matches();
+
+    }
+
+
+
 }
