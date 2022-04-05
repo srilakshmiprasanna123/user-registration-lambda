@@ -48,4 +48,20 @@ public class UserRegistrationTest {
         Assert.assertEquals(false, result);
     }
 
+
+    /*
+     * test cases for mobile number validation
+     */
+    @Test
+    public void givenPhoneNumber_WhenInFormat_ShouldReturnTrue() {
+        boolean result = userRegistration.phoneNumber("91 9604315270");
+        Assert.assertEquals(true, result);
+    }
+
+    @Test
+    public void givenPhoneNumber_WhenOurOfFormat_ShouldReturnFlase() {
+        boolean result = userRegistration.phoneNumber("+91 9604315270");
+        Assert.assertEquals(false, result);
+    }
+
 }
