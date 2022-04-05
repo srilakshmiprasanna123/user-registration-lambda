@@ -6,13 +6,13 @@ import org.junit.runners.Parameterized;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
+
 @RunWith(Parameterized.class)
-public class EmailTest1 {
+public class EmailTest {
     private String email;
     private boolean expectedResult;
 
-    public EmailTest1(String email, boolean expectedResult) {
+    public EmailTest(String email, boolean expectedResult) {
         this.email = email;
         this.expectedResult = expectedResult;
     }
