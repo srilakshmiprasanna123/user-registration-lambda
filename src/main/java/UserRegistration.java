@@ -78,7 +78,16 @@ public class UserRegistration {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
+    }
 
+    /*
+     * Has exactly 1 Special Character
+     */
+    public boolean passwordRule4(String password) {
+        String regex = "^[A-Z]{1}[0-9a-zA-Z!,@#$&*().]{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password);
+        return matcher.matches();
     }
 
 
