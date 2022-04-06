@@ -9,7 +9,7 @@ public class UserValidationTest {
         UserValidation validation = new UserValidation();
         boolean actualResult = true;
         try {
-            actualResult = validation.firstName("Manish");
+            actualResult = validation.firstName("Lucky");
         } catch (UserValidationException exception) {
             Assert.assertEquals(actualResult, exception.getMessage());
         }
@@ -20,7 +20,7 @@ public class UserValidationTest {
         UserValidation validation = new UserValidation();
         boolean actualResult = true;
         try {
-            actualResult = validation.lastName("Kumar");
+            actualResult = validation.lastName("Prasanna");
         } catch (UserValidationException exception) {
             Assert.assertEquals(actualResult, exception.getMessage());
         }
@@ -31,7 +31,7 @@ public class UserValidationTest {
         UserValidation validation = new UserValidation();
         boolean actualResult = true;
         try {
-            actualResult = validation.email("mkaubr007@gmail.com");
+            actualResult = validation.email("lucky007@gmail.com");
         } catch (UserValidationException exception) {
             Assert.assertEquals(actualResult, exception);
         }
